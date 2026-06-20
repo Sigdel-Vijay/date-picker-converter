@@ -5,7 +5,7 @@ plugins {
 
 
 group = "com.github.Sigdel-Vijay"
-version = "1.0.0"
+version = "1.0.4"
 
 android {
     namespace 'com.hornet.dateconverter'
@@ -54,7 +54,7 @@ afterEvaluate {
                 from components.release
                 groupId = "com.github.Sigdel-Vijay"
                 artifactId = "library"
-                version = "1.0.0"
+                version = "1.0.4"
                 artifact androidSourcesJar
             }
         }
