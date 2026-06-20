@@ -1,0 +1,36 @@
+[versions]
+agp = "8.13.2"
+
+appcompat = "1.7.1"
+recyclerview = "1.4.0"
+constraintlayout = "2.2.1"
+material = "1.14.0"
+
+junit = "4.13.2"
+robolectric = "4.16.1"
+quickcheck = "1.0"
+
+joda = "2.14.2"
+
+[libraries]
+
+# AndroidX
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+
+# Material
+material = { module = "com.google.android.material:material", version.ref = "material" }
+
+# Utilities
+joda-time = { module = "joda-time:joda-time", version.ref = "joda" }
+
+# Testing
+junit = { module = "junit:junit", version.ref = "junit" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+quickcheck-core = { module = "com.pholser:junit-quickcheck-core", version.ref = "quickcheck" }
+quickcheck-generators = { module = "com.pholser:junit-quickcheck-generators", version.ref = "quickcheck" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }

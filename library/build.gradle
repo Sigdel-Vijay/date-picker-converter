@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+
+group = "com.github.Sigdel-Vijay"
+version = "1.0.0"
+
+android {
+    namespace 'com.hornet.dateconverter'
+    compileSdkVersion 36
+
+    defaultConfig {
+        minSdk 30
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    publishing {
+        singleVariant('release')
+    }
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = "com.github.Sigdel-Vijay"
+                artifactId = "library"
+                version = "1.0.0"
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation libs.recyclerview
+    implementation libs.appcompat
+    implementation libs.joda.time
+    implementation libs.material
+
+    testImplementation libs.junit
+    testImplementation libs.robolectric
+    testImplementation libs.quickcheck.core
+    testImplementation libs.quickcheck.generators
+}
