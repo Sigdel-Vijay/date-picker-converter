@@ -1,4 +1,4 @@
 jdk:
   - openjdk17
 install:
-  - ./gradlew :dropdashwalletsdk:publishToMavenLocal
+  - ./gradlew :library:publishToMavenLocal
