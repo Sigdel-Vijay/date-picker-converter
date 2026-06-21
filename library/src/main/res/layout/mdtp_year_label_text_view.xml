@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.hornet.dateconverter.DatePicker.TextViewWithCircularIndicator
+<com.devroid.dateconverterlibrary.DatePicker.TextViewWithCircularIndicator
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mdtp_month_text_view"
     android:layout_width="match_parent"
@@ -22,3 +22,6 @@
     android:gravity="center"
     android:textColor="@color/mdtp_date_picker_year_selector"
     android:textSize="@dimen/mdtp_year_label_text_size" />
+
+
+

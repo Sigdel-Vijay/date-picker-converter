@@ -37,7 +37,7 @@
             android:layout_height="@dimen/mdtp_header_height"
             android:layout_gravity="center" />
 
-        <com.hornet.dateconverter.TimePicker.RadialPickerLayout
+        <com.devroid.dateconverterlibrary.TimePicker.RadialPickerLayout
             android:id="@+id/mdtp_time_picker"
             android:layout_height="@dimen/mdtp_time_picker_height"
             android:layout_width="@dimen/mdtp_picker_dimen"
@@ -49,3 +49,6 @@
 
     <include layout="@layout/mdtp_done_button" />
 </LinearLayout>
+
+
+

@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace 'com.hornet.nepalidateconverter'
+    namespace 'com.devroid.nepalidateconverter'
     compileSdk 36
 
     defaultConfig {
-        applicationId "com.hornet.nepalidateconverter"
+        applicationId "com.devroid.nepalidateconverter"
         minSdk 30
         targetSdk 35
         versionCode 1
@@ -13,12 +13,18 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     lint {
         checkReleaseBuilds false
     }
 
     buildFeatures {
         dataBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     buildTypes {
@@ -39,3 +45,5 @@ dependencies {
 
     testImplementation libs.junit
 }
+
+

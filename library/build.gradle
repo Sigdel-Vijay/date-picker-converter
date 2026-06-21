@@ -8,13 +8,19 @@ group = "com.github.Sigdel-Vijay"
 version = "1.0.4"
 
 android {
-    namespace 'com.hornet.dateconverter'
+    namespace 'com.devroid.dateconverterlibrary'
     compileSdkVersion 36
 
     defaultConfig {
         minSdk 30
         consumerProguardFiles "consumer-rules.pro"
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
     testOptions {
         unitTests.returnDefaultValues = true
         unitTests {
@@ -74,3 +80,6 @@ dependencies {
     testImplementation libs.quickcheck.core
     testImplementation libs.quickcheck.generators
 }
+
+
+

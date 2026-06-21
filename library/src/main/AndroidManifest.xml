@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hornet.dateconverter">
+    package="com.devroid.dateconverterlibrary">
 
     <application
         android:allowBackup="true"
@@ -9,3 +9,6 @@
     </application>
 
 </manifest>
+
+
+
